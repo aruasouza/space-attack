@@ -98,8 +98,8 @@ def clear_screen(screen):
         recorde = int(f.read())
     if score > recorde:
         Text(0,-100,'Novo Recorde',100,'orange','center')
-    with open('recorde','w') as f:
-        f.write(str(score))
+        with open('recorde','w') as f:
+            f.write(str(score))
     global end
     end = True
 
